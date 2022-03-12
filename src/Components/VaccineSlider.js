@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Slider from '@material-ui/core/Slider';
+import Slider from '@material-ui/lab/Slider';
 import { withStyles } from '@material-ui/core/styles';
 import VaccineButtonOption from "./VaccineButtonOption";
 import Popover from '@material-ui/core/Popover';
