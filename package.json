@@ -1,0 +1,33 @@
+{
+  "name": "scheduler",
+  "version": "0.2.0",
+  "private": true,
+  "homepage": "http://www.spimmunizationscheduler.com",
+  "dependencies": {
+    "@material-ui/core": "^4.12.3",
+    "@material-ui/lab": "^3.0.0-alpha.21",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "react-ga": "^2.6.0",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "^5.0.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

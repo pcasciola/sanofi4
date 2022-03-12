@@ -1,0 +1,9 @@
+node_modules
+.idea
+/package-lock.json
+build/
+/immunization_report for submission.pdf
+/Updates to inital landing page for IVS.pdf
+.scannerwork/.sonar_lock
+.scannerwork/report-task.txt
+.scannerwork/css-bundle/stylelintconfig.json
