@@ -78,7 +78,7 @@ class SubmitDialog extends React.Component {
                             </div>
                             <div className="row form-group">
                                 <div className={"col-xs-6 text-right logInSwitchForm"}>
-                                    <label htmlFor="ShowSanofiLogo">Show Sanofi Pasteur logo in PDF?</label>
+                                    <label htmlFor="ShowSanofiLogo">Show Sanofi logo in PDF?</label>
                                 </div>
                                 <div className={"col-xs-6"}>
                                     <div className="checkbox text-left">

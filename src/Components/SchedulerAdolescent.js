@@ -49,7 +49,7 @@ class SchedulerAdolescent extends Component {
                                     <div id="collapse1" className="panel-collapse collapse in">
                                         <ul className="list-group">
                                             <li className="list-group-item">My Schedule</li>
-                                            <li className="list-group-item">Schedule with Sanofi Pasteur Vaccines</li>
+                                            <li className="list-group-item">Schedule with Sanofi Vaccines</li>
                                             <li className="list-group-item">Catch-Up Schedule</li>
                                         </ul>
                                     </div>
@@ -221,7 +221,7 @@ class SchedulerAdolescent extends Component {
                             <div className="footerbg">
                                 <div className="row">
                                     <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-                                        <div className="btn-group-vertical verticalFooter" data-toggle="tooltip" data-placement="right" data-title="Click these buttons for Important Safety Information and Prescribing Information for Sanofi Pasteur vaccines.">
+                                        <div className="btn-group-vertical verticalFooter" data-toggle="tooltip" data-placement="right" data-title="Click these buttons for Important Safety Information and Prescribing Information for Sanofi vaccines.">
                                             <button type="button" className="btn btn-sm btn-default spaceVerticalBtn">Prescribing Information</button>
                                             <button type="button" className="btn btn-sm btn-default spaceVerticalBtn">Important Safety Information</button>
                                         </div>
@@ -231,8 +231,8 @@ class SchedulerAdolescent extends Component {
                                             <button type="button" className="btn btn-default spaceHorizontalBtn" data-toggle="tooltip" data-placement="top" data-title="Select the vaccinations commonly used in your practice and the age at which they are administered.">
                                                 My Schedule
                                             </button>
-                                            <button type="button" className="btn btn-default spaceHorizontalBtn" data-toggle="tooltip" data-placement="top" data-title="Click the &quot;Schedule With Sanofi Pasteur Vaccines&quot; tab to view a suggested schedule using Sanofi Pasteur vaccines portfolio.">
-                                                Schedule With Sanofi Pasteur Vaccines
+                                            <button type="button" className="btn btn-default spaceHorizontalBtn" data-toggle="tooltip" data-placement="top" data-title="Click the &quot;Schedule With Sanofi Vaccines&quot; tab to view a suggested schedule using Sanofi vaccines portfolio.">
+                                                Schedule With Sanofi Vaccines
                                             </button>
                                             <button type="button" className="btn btn-default spaceHorizontalBtn" data-toggle="tooltip" data-placement="top" data-title="View &quot;Catch-up Schedule&quot; for children who start late or are more than 1 month behind.">
                                                 Catch-up Schedule

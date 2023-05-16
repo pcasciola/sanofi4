@@ -239,7 +239,7 @@ class Header extends Component {
         let ShowSanofiLogoCheckbox = this.state.ShowSanofiLogo ? "On" : "Off";
         let Email = this.state.SchedulerEmail;
 
-        let scheduleName = (this.state.isTutorial || !this.props.showScheduleType) ? "" : (this.props.sanofiOnly ? "Schedule With Sanofi Pasteur Vaccines" : "My Schedule");
+        let scheduleName = (this.state.isTutorial || !this.props.showScheduleType) ? "" : (this.props.sanofiOnly ? "Schedule With Sanofi Vaccines" : "My Schedule");
 
         //console.log(this.state.isLoaded);
         if(this.state.isLoaded===true) {
@@ -278,7 +278,7 @@ class Header extends Component {
                             <h5 className="navbar-brand-sanofi">Immunization Scheduler</h5>
                         </div>
                         <div className="navbar-header text-right col-md-4 col-xs-4">
-                            <img className="mainLogo text-center" src="static/sanofi.gif"/>
+                            <img className="mainLogo text-center" src="static/sanofi_new.gif"/>
                         </div>
                     </div>
                 </div>
@@ -405,7 +405,7 @@ class Header extends Component {
                             </div>
                             <div className="row form-group">
                                 <div className={"col-xs-6 text-right logInSwitchForm"}>
-                                    <label htmlFor="ShowSanofiLogo">Show Sanofi Pasteur logo in PDF?</label>
+                                    <label htmlFor="ShowSanofiLogo">Show Sanofi logo in PDF?</label>
                                 </div>
                                 <div className={"col-xs-6"}>
                                     <div className="checkbox text-left">

@@ -389,6 +389,7 @@ class Scheduler extends Component {
                 delete this.state.selections[this.state.sanofiOnly ? "SANOFI" : "MY"]["HEPB"][columnName[2]];
                 delete this.state.selections[this.state.sanofiOnly ? "SANOFI" : "MY"]["DTAP"][columnName[2]];
                 delete this.state.selections[this.state.sanofiOnly ? "SANOFI" : "MY"]["IPV"][columnName[2]];
+                delete this.state.selections[this.state.sanofiOnly ? "SANOFI" : "MY"]["HIB"][columnName[2]];
 
                 this.setScheduleFlag("pediarixCombo1", false);
                 this.setScheduleFlag("pentacelCombo1", false);
@@ -398,6 +399,7 @@ class Scheduler extends Component {
                 delete this.state.selections[this.state.sanofiOnly ? "SANOFI" : "MY"]["HEPB"][columnName[3]];
                 delete this.state.selections[this.state.sanofiOnly ? "SANOFI" : "MY"]["DTAP"][columnName[3]];
                 delete this.state.selections[this.state.sanofiOnly ? "SANOFI" : "MY"]["IPV"][columnName[3]];
+                delete this.state.selections[this.state.sanofiOnly ? "SANOFI" : "MY"]["HIB"][columnName[3]];
 
                 this.setScheduleFlag("pediarixCombo2", false);
                 this.setScheduleFlag("pentacelCombo2", false);
@@ -409,7 +411,7 @@ class Scheduler extends Component {
                     delete this.state.selections[this.state.sanofiOnly ? "SANOFI" : "MY"]["IPV"][columnName[x]];
                 }
                 delete this.state.selections[this.state.sanofiOnly ? "SANOFI" : "MY"]["DTAP"][columnName[4]];
-
+                delete this.state.selections[this.state.sanofiOnly ? "SANOFI" : "MY"]["HIB"][columnName[4]];
                 row = this.state.v.get("HEPB");
                 this.setScheduleFlag("pediarixCombo3", false);
                 this.setScheduleFlag("pentacelCombo3", false);
@@ -636,6 +638,9 @@ class Scheduler extends Component {
 
             this.clearCombo("PENTACEL");
             this.clearCombo("PEDIARIX");
+            delete this.state.selections[this.state.sanofiOnly ? "SANOFI" : "MY"]["HIB"]["2M"];
+            delete this.state.selections[this.state.sanofiOnly ? "SANOFI" : "MY"]["HIB"]["4M"];
+            delete this.state.selections[this.state.sanofiOnly ? "SANOFI" : "MY"]["HIB"]["6M"];
 
             this.setScheduleFlag("vaxelisCombo1",true);
             this.setScheduleFlag("vaxelisCombo2",true);
@@ -776,7 +781,11 @@ class Scheduler extends Component {
 
                 //Use prod URL only if spimmunization in URL, so schedulerqa and localhost will call QA
                 let url = window.location.href.indexOf("spimmunization") > 0 ?
-                    "https://www.spimmunizationscheduler.com/sanofi2_API/preview_pdf.php" //PROD URL
+                    //Check for www in url to build proper ajax link
+                    window.location.href.indexOf("www.") > 0 ?
+                        "https://www.spimmunizationscheduler.com/sanofi2_API/preview_pdf.php" //PROD URL
+                        :
+                        "https://spimmunizationscheduler.com/sanofi2_API/preview_pdf.php" //PROD URL
                     :
                     "http://www.schedulerqa.com/sanofi2_API/preview_pdf.php" //QA URL
 
@@ -800,7 +809,10 @@ class Scheduler extends Component {
 
             //Use prod URL only if spimmunization in URL, so schedulerqa and localhost will call QA
             let url = window.location.href.indexOf("spimmunization") > 0 ?
-                "https://www.spimmunizationscheduler.com/sanofi2_API/email_pdf.php"  //PROD URL
+                window.location.href.indexOf("www.") > 0 ?
+                    "https://www.spimmunizationscheduler.com/sanofi2_API/email_pdf.php"  //PROD URL
+                    :
+                    "https://spimmunizationscheduler.com/sanofi2_API/email_pdf.php"  //PROD URL
                 :
                 "http://www.schedulerqa.com/sanofi2_API/email_pdf.php";  //QA URL
 
@@ -884,9 +896,9 @@ class Scheduler extends Component {
                         <div className={this.state.isTutorial ? "row" : "displayNone"} style={{verticalAlign: 'top'}}>
                             <div className="col-md-12 col-xs-12">
                                 <strong style={{fontSize: 18+"px"}} > Program Overview and Instructions: Immunization Scheduler </strong>
-                                <p>Sanofi Pasteur is pleased to provide you with this interactive Immunization Scheduler. It is designed to help
+                                <p>Sanofi is pleased to provide you with this interactive Immunization Scheduler. It is designed to help
                                     you create customized age-appropriate immunization programs specific to your practice. The Immunization
-                                    Scheduler also offers practical information regarding the use of Sanofi Pasteur vaccines to meet
+                                    Scheduler also offers practical information regarding the use of Sanofi vaccines to meet
                                     your immunization needs.
                                 </p>
                                 <p>All company vaccines will be show across the series regardless of the age selected.</p>

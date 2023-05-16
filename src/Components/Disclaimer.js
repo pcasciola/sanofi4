@@ -23,7 +23,7 @@ class Disclaimer extends Component {
                                 <h4 className="navbar-brand-sanofi">Immunization Scheduler</h4>
                             </div>
                             <div className="navbar-header text-right col-md-4 col-xs-4">
-                                <img className="mainLogo text-center" src="static/sanofi.gif"/>
+                                <img className="mainLogo text-center" src="static/sanofi_new.gif"/>
                             </div>
                         </div>
                     </div>
@@ -46,10 +46,10 @@ class Disclaimer extends Component {
                     </div>
                     <br/>
                 </div>
-                <footer className="navbar navbar-fixed-bottom disclaimer"> © 2021 Sanofi Pasteur Inc. All rights reserved. <a href="https://www.sanofi.us/en/legal-notice" target="_blank">Legal disclaimer information</a> and <a href="https://www.sanofi.us/en/legal-notice#Privacypolicy" target="_blank">Privacy Policy</a>.
+                <footer className="navbar navbar-fixed-bottom disclaimer"> © 2022 Sanofi Pasteur Inc. All rights reserved. <a href="https://www.sanofi.us/en/legal-notice" target="_blank">Legal disclaimer information</a> and <a href="https://www.sanofi.us/en/legal-notice#Privacypolicy" target="_blank">Privacy Policy</a>.
                     Questions or Comments? <a href="http://contactus.sanofi-aventis.us/" target="_blank">Click here</a> to contact us.
                     This site is intended for use by U.S. Health Care Professionals only.
-                    MAT-US-2005119-v2.0-11/2021</footer>
+                    MAT-US-2005119-v3.0-10/2022</footer>
             </div>
         );
     }

@@ -199,7 +199,7 @@ class LogInModal extends Component {
                                     </div>
                                     <div className="row form-group">
                                         <div className={"col-xs-4 text-right logInSwitchForm"}>
-                                            <label htmlFor="SanofiLogo">Show Sanofi Pasteur logo on PDF?</label>
+                                            <label htmlFor="SanofiLogo">Show Sanofi logo on PDF?</label>
                                         </div>
                                         <div className={"col-xs-8"}>
                                             <div className="checkbox text-left">

@@ -18,7 +18,7 @@ class HeaderNav extends Component {
                         <div id="collapse1" className="panel-collapse collapse in">
                             <ul className="list-group">
                                 <li className="list-group-item">My Schedule</li>
-                                <li className="list-group-item">Schedule with Sanofi Pasteur Vaccines</li>
+                                <li className="list-group-item">Schedule with Sanofi Vaccines</li>
                             </ul>
                         </div>
                     </div>

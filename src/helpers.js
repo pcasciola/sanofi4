@@ -88,14 +88,11 @@ export function initializeVaccines() {
         genericIndexName: "VAR",
         PIUrl: "http://www.google.com",
         tradeAndTrue: <span>VAR []</span>});
-
-
-
     vaccines.set("ACTHIB", {    //**SANOFI DRUG **/
         imgName: "acthib.png",
         IndicationBlurb: <span>the prevention of invasive disease caused by <i>Haemophilus influenzae</i> type b. ActHIB vaccine is approved for use as a four dose series in infants and children 2 months through 5 years of age.</span>,
         isSanofi: true,
-        ISIBlurb: <span>ActHIB is contraindicated in persons who have had a severe allergic reaction (e.g., anaphylaxis) after a previous dose of any Haemophilus influenzae type b or tetanus toxoid-containing vaccine or to any component of ActHIB. If Guillain-Barr&eacute; syndrome has occurred within 6 weeks following previous vaccination with a tetanus toxoid-containing vaccine, or if adverse events have occurred in temporal relation to receipt of tetanus toxoid-containing vaccine, the decision to give ActHIB should be based on careful consideration of the...</span>,
+        ISIBlurb: <span>ActHIB is contraindicated in persons who have had a severe allergic reaction (e.g., anaphylaxis) after a previous dose of any Haemophilus influenzae type b or tetanus toxoid-containing vaccine or to any component of ActHIB. If Guillain-Barr&eacute; syndrome has occurred within 6 weeks following previous vaccination with a tetanus toxoid-containing vaccine, or if adverse events have occurred in temporal relation to receipt of tetanus toxoid-containing vaccine, or if adverse events have occurred in temporal...</span>,
         ISIFile: "acthib-ISI.pdf",
         name: "ActHIB",
         PIUrl: "https://www.vaccineshoppe.com/ActHIBPI",
@@ -239,7 +236,7 @@ anaphylactic event following the administration of the vaccine. Some individuals
         ISIFile: "menquadfi-ISI.pdf",
         name: "MenQuadfi",
         PIUrl: "http://vaccineshoppe.com/menquadfipi",
-        tradeAndTrue: <span>MenQuadfi<sup>&reg;</sup> [Meningococcal (Groups A, C, Y and W) Conjugate Vaccine]</span>});
+        tradeAndTrue: <span>MenQuadfi<sup>&reg;</sup> [Meningococcal (Groups A, C, Y, W) Conjugate Vaccine]</span>});
     vaccines.set("MENVEO", {
         imgName:"menveo.png",
         name: "Menveo",
@@ -272,12 +269,10 @@ anaphylactic event following the administration of the vaccine. Some individuals
         IndicationBlurb: <span>active immunization against diphtheria, tetanus, pertussis, poliomyelitis, and invasive disease due to <i>H influenzae</i> type b. Pentacel is...</span>,
         isSanofi: true,
         ISIBlurb: <span>Contraindications to vaccination with Pentacel include: a severe allergic reaction (e.g., anaphylaxis) after a previous dose of Pentacel, any ingredient of Pentacel, or any other diphtheria toxoid-, tetanus toxoid-,
-pertussis antigen-containing vaccine with no other identifiable cause; or a
-progressive...</span>,
+pertussis antigen-containing vaccine, inactivated poliovirus vaccine, or <i>Haemophilus</i>...</span>,
         ISIFile: "pentacel-ISI.pdf",
         name: "Pentacel",
-        PIUrl: "https://www.vaccineshoppe.com/PentacelPI",
-        PIOverride: <span>Prescribing Information for<br/>Pentacel (<a class='prescribeFooterLink' href='https://www.vaccineshoppe.com/PentacelPI' target='top'>49281-0510-05</a> and <a class='prescribeFooterLink' href='https://www.vaccineshoppe.com/511-05' target='top'>49281-0511-05</a>)</span>,
+        PIUrl: "https://www.vaccineshoppe.com/511-05",
         tradeAndTrue: <span>PENTACEL<sup>&reg;</sup>  [Diphtheria and Tetanus Toxoids and Acellular Pertussis Adsorbed, Inactivated Poliovirus and Haemophilus b Conjugate (Tetanus Toxoid Conjugate) Vaccine]</span>});
     vaccines.set("PREVNAR 13", {
         imgName:"prevnar.png",
@@ -291,16 +286,15 @@ progressive...</span>,
         tradeAndTrue: <span>PROQUAD<sup>&reg;</sup> [Measles, Mumps, Rubella and Varicella Virus Vaccine Live]</span>});
     vaccines.set("QUADRACEL", {    //**SANOFI DRUG **/
         imgName:"quadracel.png",
-        IndicationBlurb: <span>active immunization against diphtheria, tetanus, pertussis, and poliomyelitis. A single dose of Quadracel is approved for use in children 4 through 6 years of
-age as a fifth dose in the diphtheria, tetanus, pertussis vaccination (DTaP) series, and
-as a...</span>,
+        IndicationBlurb: <span>active immunization against diphtheria, tetanus, pertussis, and poliomyelitis. A single dose of Quadracel is approved as a fifth dose in the diptheria, tetanus, pertussis (DTaP) vaccination series, and as a fourth or fifth dose in the...</span>,
         isSanofi: true,
         ISIBlurb: <span>Contraindications to vaccination with Quadracel include: a severe allergic reaction (e.g., anaphylaxis) to any ingredient of Quadracel or following any other diphtheria toxoid-, tetanus toxoid-, or pertussis antigen-containing vaccine, or
-inactivated poliovirus vaccine; encephalopathy within 7 days after a previous dose of a
+inactivated poliovirus vaccine; encephalopathy within 7 days of a previous dose of a
 pertussis antigen-containing vaccine</span>,
         ISIFile: "quadracel-ISI.pdf",
         name: "Quadracel",
         PIUrl: "https://www.vaccineshoppe.com/QUADRACELPI",
+        PIOverride: <span>Prescribing Information for<br/>Quadracel (<a class='prescribeFooterLink' href='https://www.vaccineshoppe.com/QuadracelveroPI' target='top'>49281-564-10/15</a> and <a class='prescribeFooterLink' href='https://www.vaccineshoppe.com/QuadracelPI' target='top'>49281-562-10</a>)</span>,
         tradeAndTrue: <span>QUADRACEL<sup>&reg;</sup> (Diphtheria and Tetanus Toxoids and Acellular Pertussis Adsorbed and Inactivated Poliovirus Vaccine)</span>});
     vaccines.set("RECOMBIVAX", {
         imgName:"recombivax.png",

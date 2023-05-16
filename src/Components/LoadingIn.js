@@ -9,7 +9,7 @@ class LoadingIn extends Component {
         <div className="App">
             <div className="container-fluid">
                 <div className="col-xs-12 col-md-12">
-                    <img src="static/sanofi.gif" className="mainLogo text-center zoom" alt="Sanofi Pasteur"/>
+                    <img src="static/sanofi.gif" className="mainLogo text-center zoom" alt="Sanofi"/>
                 </div>
                 <div className="col-xs-12 col-md-12">
                     <Link to={'/Introduction'}>
